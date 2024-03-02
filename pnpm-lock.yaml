@@ -54,8 +54,8 @@ dependencies:
     specifier: ^6.0.2
     version: 6.1.0(next@14.0.4)(react@18.2.0)(uploadthing@6.1.1)
   arctic:
-    specifier: ^0.10.2
-    version: 0.10.3
+    specifier: ^1.2.1
+    version: 1.2.1
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -2411,6 +2411,16 @@ packages:
       - supports-color
     dev: true
 
+  /@napi-rs/wasm-runtime@0.1.1:
+    resolution: {integrity: sha512-ATj9ua659JgrkICjJscaeZdmPr44cb/KFjNWuD0N6pux0SpzaM7+iOuuK11mAnQM2N9q0DT4REu6NkL8ZEhopw==}
+    requiresBuild: true
+    dependencies:
+      '@emnapi/core': 0.45.0
+      '@emnapi/runtime': 0.45.0
+      '@tybys/wasm-util': 0.8.1
+    dev: false
+    optional: true
+
   /@next/env@14.0.4:
     resolution: {integrity: sha512-irQnbMLbUNQpP1wcE5NstJtbuA/69kRfzBrpAD7Gsn8zm/CY6YQYc3HQBz8QPxwISG26tIm5afvvVbu508oBeQ==}
 
@@ -2501,8 +2511,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-android-arm-eabi@1.7.2:
+    resolution: {integrity: sha512-WhW84XOzdR4AOGc4BJvIg5lCRVBL0pXp/PPCe8QCyWw493p7VdNCdYpr2xdtjS/0zImmY85HNB/6zpzjLRTT/A==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-android-arm64@1.6.1:
     resolution: {integrity: sha512-3HYc9lOZ63j71sSFjpVTgu1HUg2O94HvVz66j47Ia8Qq6wjpQusUebeUigMIRPq6Ewh6AgeGv5fxe0cQLGqHlw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-android-arm64@1.7.2:
+    resolution: {integrity: sha512-CdtayHSMIyDuVhSYFirwA757c4foQuyTjpysgFJLHweP9C7uDiBf9WBYij+UyabpaCadJ0wPyK6Vakinvlk4/g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [android]
@@ -2519,8 +2547,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-darwin-arm64@1.7.2:
+    resolution: {integrity: sha512-hUOhtgYHTEyzX5sgMZVdXunONOus2HWpWydF5D/RYJ1mZ76FXRnFpQE40DqbzisdPIraKdn40m7JqkPP7wqdyg==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-darwin-x64@1.6.1:
     resolution: {integrity: sha512-7j6ZLB77XbrF0jpV2ur1cE42mfYf5L6O0coco04yH7wRbIGIKupS7CW+7ZGWR7zqi3RCV1AM2Qdq8FyXuZkZJA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-darwin-x64@1.7.2:
+    resolution: {integrity: sha512-lfs5HX+t542yUfcv6Aa/NeGD1nUCwyQNgnPEGcik71Ow6V13hkR1bHgmT1u3CHN4fBts0gW+DQEDsq1xlVgkvw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
@@ -2537,8 +2583,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-freebsd-x64@1.7.2:
+    resolution: {integrity: sha512-ROoF+4VaCBJUjddrTN1hjuqSl89ppRcjVXJscSPJjWzTlbzFmGGovJvIzUBmCr/Oq3yM1zKHj6MP9oRD5cB+/g==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-linux-arm-gnueabihf@1.6.1:
     resolution: {integrity: sha512-/4FdsWZT8xGiZEIz21bS0sz/3aG6+GaEgFSyr1wF6ui2xdr4nhobOUxhkaPXR1vOwIE3v9B5YB5uehtSCdNTHw==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-linux-arm-gnueabihf@1.7.2:
+    resolution: {integrity: sha512-CBSB8KPI8LS74Bcz3dYaa2/khULutz4vSDvFWUERlSLX+mPdDhoZi6UPuUPPF9e01w8AbiK1YCqlLUTm3tIMfw==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
@@ -2555,8 +2619,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-linux-arm64-gnu@1.7.2:
+    resolution: {integrity: sha512-6LBTug6ZiWFakP3X3Nqs7ZTM03gmcSWX4YvEn20HhhQE5NDrsrw3zNqGj0cJiNzKKIMSDDuj7uGy+ITEfNo4CA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-linux-arm64-musl@1.6.1:
     resolution: {integrity: sha512-GuMNkb/BtJBXDUDlgAu31limYbRBNryo6mHV0f3/qUveQP4+LZYx5zD2WorqawNAB4SjdAxJBc4rJgmqabHJDw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-linux-arm64-musl@1.7.2:
+    resolution: {integrity: sha512-KjhQ+ZPne29t9VRVeIif7JdKwQba+tM6CBNYBoJB1iON0CUKeqSQtZcHuTj9gkf2SNRG5bsU4ABcfxd0OKsKHg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2573,8 +2655,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-linux-x64-gnu@1.7.2:
+    resolution: {integrity: sha512-BQvp+iLtKqomHz4q5t1aKoni9osgvUDU5sZtHAlFm5dRTlGHnympcQVATRE5GHyH9C6MIM9W7P1kqEeCLGPolQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-linux-x64-musl@1.6.1:
     resolution: {integrity: sha512-fKJNzFe4QZ3/+C4BuYXK+Je9H2/AY2ojj4Gbr/aFYleu3B/S0pDMvLRKqb3yx5FGeyPBkrKwMrscCqPxAFKJbw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-linux-x64-musl@1.7.2:
+    resolution: {integrity: sha512-yXJudpBZQ98g+lWaHn9EzZ5KsAyqRdlpub/K+5NP7gHehb8wzBRIFAejIHAG0fvzQEEc86VOnV2koWIVZxWAvw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2593,8 +2693,27 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-wasm32-wasi@1.7.2:
+    resolution: {integrity: sha512-diXlVjJZY2GIV8ZDwUqXPhacXsFR0klGSv5D9f+XidwWXK4udtzDhkM/7N/Mb7h1HAWaxZ6IN9spYFjvWH1wqg==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+    requiresBuild: true
+    dependencies:
+      '@napi-rs/wasm-runtime': 0.1.1
+    dev: false
+    optional: true
+
   /@node-rs/argon2-win32-arm64-msvc@1.6.1:
     resolution: {integrity: sha512-9tbGPwUGWsuWl9JGeMusaRsCDQeO39H3H7lZRVAPgPtP4UUU/jSzLgi4WA37E6XF9ZSFr+V82Gb+isXOTTm+1w==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-win32-arm64-msvc@1.7.2:
+    resolution: {integrity: sha512-dhIBrY04P9nbmwzBpgERQDmmSu4YBZyeEE32t4TikMz5rQ07iaVC+JpGmtCBZoDIsLDHGC8cikENd3YEqpqIcA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -2611,8 +2730,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/argon2-win32-ia32-msvc@1.7.2:
+    resolution: {integrity: sha512-o1tfqr8gyALCzuxBoQfvhxkeYMaw/0H8Gmt7klTYyEIBvEFu7SD5qytXO9Px7t5420nZL/Wy5cflg3IB1s57Pg==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/argon2-win32-x64-msvc@1.6.1:
     resolution: {integrity: sha512-y2FPYGXHEaSodc/ZIjELbxXTz4x84fdbDBELcWLBoPNJEy3z4P5bJDrUn5rP8VbIFcaJ9HwUmQP54PFemF4ReQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/argon2-win32-x64-msvc@1.7.2:
+    resolution: {integrity: sha512-v0h53XUc7hNgWiWi0qcMcHvj9/kwuItI9NwLK4C+gtzT3UB0cedhfIL8HFMKThMXasy41ZdbpCF2Bi0kJoLNEg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -2640,8 +2777,37 @@ packages:
       '@node-rs/argon2-win32-x64-msvc': 1.6.1
     dev: false
 
+  /@node-rs/argon2@1.7.2:
+    resolution: {integrity: sha512-+H6pc3M1vIX9YnG59YW7prHhhpv19P8YyxlXHnnFzTimf2q+kKDF7mGWbhvN9STqIY+P70Patn0Q6qb6Ib5/4g==}
+    engines: {node: '>= 10'}
+    optionalDependencies:
+      '@node-rs/argon2-android-arm-eabi': 1.7.2
+      '@node-rs/argon2-android-arm64': 1.7.2
+      '@node-rs/argon2-darwin-arm64': 1.7.2
+      '@node-rs/argon2-darwin-x64': 1.7.2
+      '@node-rs/argon2-freebsd-x64': 1.7.2
+      '@node-rs/argon2-linux-arm-gnueabihf': 1.7.2
+      '@node-rs/argon2-linux-arm64-gnu': 1.7.2
+      '@node-rs/argon2-linux-arm64-musl': 1.7.2
+      '@node-rs/argon2-linux-x64-gnu': 1.7.2
+      '@node-rs/argon2-linux-x64-musl': 1.7.2
+      '@node-rs/argon2-wasm32-wasi': 1.7.2
+      '@node-rs/argon2-win32-arm64-msvc': 1.7.2
+      '@node-rs/argon2-win32-ia32-msvc': 1.7.2
+      '@node-rs/argon2-win32-x64-msvc': 1.7.2
+    dev: false
+
   /@node-rs/bcrypt-android-arm-eabi@1.8.1:
     resolution: {integrity: sha512-v+FgdokyvPAawpSVuj7x8B/lOPQj86ToqeSTCqBNMdQIQngDL6h8fxYPv8kBrY6kqAd+nFhp3rjaWav0fYB+PQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-android-arm-eabi@1.9.2:
+    resolution: {integrity: sha512-er/Q2khwpan9pczvTTqY/DJE4UU65u31xd0NkZlHUTKyB7djRhWfzoGexGx2GN+k831/RR3U8kKE/8QUHeO3hQ==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [android]
@@ -2658,8 +2824,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-android-arm64@1.9.2:
+    resolution: {integrity: sha512-OUYatOEG5vbLbF73q2TC8UqrDO81zUQxnaFD/OAB1hcm6J+ur0zJ8E53c35/DIqkTp7JarPMraC4rouJ2ugN4w==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-darwin-arm64@1.8.1:
     resolution: {integrity: sha512-FX7C9Cd1B1mrtzDO+388cx3Pw8O2/yIYL61XcINZwKu5XE+7cEA7+F2ad9LS8FFbYE9/HOrVR5R5oLpOTzrEVA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-darwin-arm64@1.9.2:
+    resolution: {integrity: sha512-svJKsGbzMAxOB5oluOYneN4YkKUy26WSMgm3KOIhgoX30IeMilj+2jFN/5qrI0oDZ0Iczb3XyL5DuZFtEkdP8A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
@@ -2676,8 +2860,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-darwin-x64@1.9.2:
+    resolution: {integrity: sha512-9OrySjBi/rWix8NZWD/TrNbNcwMY0pAiMHdL09aJnJ07uPih83GGh1pq4UHCYFCMy7iTX8swOmDlGBUImkOZbg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-freebsd-x64@1.8.1:
     resolution: {integrity: sha512-rNZS5aFaYJOgskKISXmc/JogmDzZIslbxXXDFehpNW29N4ABsM6WpXZutAnNLOjhW66fZ2My2m5PXjP7oE6qVQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-freebsd-x64@1.9.2:
+    resolution: {integrity: sha512-/djXV71RO6g5L1mI2pVvmp3x3pH7G4uKI3ODG1JBIXoz334oOcCMh40sB0uq0ljP8WEadker01p4T1rJE98fpg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [freebsd]
@@ -2694,8 +2896,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-linux-arm-gnueabihf@1.9.2:
+    resolution: {integrity: sha512-F7wP950OTAooxEleUN4I2hqryGZK7hi1cSgRF13Wvbc597RFux35KiSxIXUA3mNt2DE7lV2PeceEtCOScaThWQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-linux-arm64-gnu@1.8.1:
     resolution: {integrity: sha512-WiZLmOSyxb1T2w8nMXciWfkYCCOzl+VG1JdhvQ0w9/MqRoTU1VasZ7nsMZfzsJW/gfG/W3ihCIoI0RZBZ1QGJA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-linux-arm64-gnu@1.9.2:
+    resolution: {integrity: sha512-MehG+yQ0TgKMgKR1rO4hdvHkVsTM91Cof8qI9EJlS5+7+QSwfFA5O0zGwCkISD7bsyauJ5uJgcByGjpEobAHOg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
@@ -2712,6 +2932,15 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-linux-arm64-musl@1.9.2:
+    resolution: {integrity: sha512-PRZTAJjOwKEGsIhmBvfNh81So+wGl4QyCFAt23j+KwBujLStjC0N3YaqtTlWVKG9tcriPtmMYiAQtXWIyIgg/w==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-linux-x64-gnu@1.8.1:
     resolution: {integrity: sha512-DNbhjS5HxiSBLEvlPQsFlt1peO0LyDkHNI39Xw8q6ADU0pgad36PIA0bHsu7shWWzBu0l4OHck9sU9eRLvHSTA==}
     engines: {node: '>= 10'}
@@ -2721,8 +2950,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-linux-x64-gnu@1.9.2:
+    resolution: {integrity: sha512-5WfGO+O1m7nJ55WZ8XDq+ItA98Z4O7sNWsR+1nIj9YGT+Tx5zkQ2RBhpK6oCWZMluuZ0eKQ0FDmyP6K+2NDRIA==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-linux-x64-musl@1.8.1:
     resolution: {integrity: sha512-KUXmJPfe7XossL41tSDhkUma9WHFWDGINhUFBBRBHIJ+WL0MMkkO4N47LZLniAkj8EH1ZFxMugVJSZfPjAzQQQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-linux-x64-musl@1.9.2:
+    resolution: {integrity: sha512-VjCn0388p6PMCVUYHgYmHZrKNc7WwNJRr2WLJsHbQRGDOKbpNL6YolCjQxUchcSPDhzwrq1cIdy4j0fpoXEsdw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
@@ -2741,8 +2988,27 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-wasm32-wasi@1.9.2:
+    resolution: {integrity: sha512-P06aHfMzm9makwU+nM7WA65yQnS1xuqJ8l/6I/LvXjnl+lfB3DtJ2B0CSLtjnUGpUgcHbWl5gEbNnTPxSAirjQ==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+    requiresBuild: true
+    dependencies:
+      '@napi-rs/wasm-runtime': 0.1.1
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-win32-arm64-msvc@1.8.1:
     resolution: {integrity: sha512-nkZF5JKuADGr7/2YOTLndLw7a8thTgOT5b0ODRxlNzFeCBs1NUJ6wgjnyPldYhfTWjG6Z4KMAXfnQv4R/HJzmw==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-win32-arm64-msvc@1.9.2:
+    resolution: {integrity: sha512-Iyo/Q5/eNw27VRd3mLBgh1b9b5fnT3QHTVwxv3Siv/MRAIfJXH/cTOe18qSwYQzNh0ZioW4yemFPYCWSZi7szA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
@@ -2759,8 +3025,26 @@ packages:
     dev: false
     optional: true
 
+  /@node-rs/bcrypt-win32-ia32-msvc@1.9.2:
+    resolution: {integrity: sha512-6LHWMaPylyyHoS5863YpxAACVB8DWCxro5W6pQ4h8WKSgHpJp8Um9jphTdN0A2w45HZjUnfcFuiFFC+TbftjCw==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
   /@node-rs/bcrypt-win32-x64-msvc@1.8.1:
     resolution: {integrity: sha512-Ii6aiLCYRg43EjVXyNrA+QBYMRF4vhgSUe64p9aBdahtlvmNy0bw2IX4T8sYGrQj4lDTLWi5xK44izh+0HbjAQ==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /@node-rs/bcrypt-win32-x64-msvc@1.9.2:
+    resolution: {integrity: sha512-vZ9T1MOaYkLO9FTyl28YX0SYJneiYTKNFgM8PUv8nas8xrD+7OzokA0fEtlNp6413T7IKSD/iG9qi8nTWsiyGg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -2786,6 +3070,26 @@ packages:
       '@node-rs/bcrypt-win32-arm64-msvc': 1.8.1
       '@node-rs/bcrypt-win32-ia32-msvc': 1.8.1
       '@node-rs/bcrypt-win32-x64-msvc': 1.8.1
+    dev: false
+
+  /@node-rs/bcrypt@1.9.2:
+    resolution: {integrity: sha512-FKUo9iCSIti+ldwoOlY1ztyIFhZxEgT7jZ/UCt/9bg1rLmNdbQQD2JKIMImDCqmTWuLPY4ZF4Q5MyOMIfDCd8Q==}
+    engines: {node: '>= 10'}
+    optionalDependencies:
+      '@node-rs/bcrypt-android-arm-eabi': 1.9.2
+      '@node-rs/bcrypt-android-arm64': 1.9.2
+      '@node-rs/bcrypt-darwin-arm64': 1.9.2
+      '@node-rs/bcrypt-darwin-x64': 1.9.2
+      '@node-rs/bcrypt-freebsd-x64': 1.9.2
+      '@node-rs/bcrypt-linux-arm-gnueabihf': 1.9.2
+      '@node-rs/bcrypt-linux-arm64-gnu': 1.9.2
+      '@node-rs/bcrypt-linux-arm64-musl': 1.9.2
+      '@node-rs/bcrypt-linux-x64-gnu': 1.9.2
+      '@node-rs/bcrypt-linux-x64-musl': 1.9.2
+      '@node-rs/bcrypt-wasm32-wasi': 1.9.2
+      '@node-rs/bcrypt-win32-arm64-msvc': 1.9.2
+      '@node-rs/bcrypt-win32-ia32-msvc': 1.9.2
+      '@node-rs/bcrypt-win32-x64-msvc': 1.9.2
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -4267,6 +4571,14 @@ packages:
       tailwindcss: 3.4.1
     dev: true
 
+  /@tybys/wasm-util@0.8.1:
+    resolution: {integrity: sha512-GSsTwyBl4pIzsxAY5wroZdyQKyhXk0d8PCRZtrSZ2WEB1cBdrp2EgGBwHOGCZtIIPun/DL3+AykCv+J6fyRH4Q==}
+    requiresBuild: true
+    dependencies:
+      tslib: 2.6.2
+    dev: false
+    optional: true
+
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
     dependencies:
@@ -4783,10 +5095,10 @@ packages:
       normalize-path: 3.0.0
       picomatch: 2.3.1
 
-  /arctic@0.10.3:
-    resolution: {integrity: sha512-xS0GYJsjwSPJSkHfuavzwdGRF+jda98dWeAPgFb5UkXuN7ECYuTDdsgB/a522MWLJvCSczTWMeEfMCQjlyhNew==}
+  /arctic@1.2.1:
+    resolution: {integrity: sha512-Pahp2ZhXH7fqrsQKRkvcsVBTFXkpUzfxSuJcyHR5Zz83a2S8yNX3w3w5rbozezO3i0w5q1zgR27VMoiuR/hB/Q==}
     dependencies:
-      oslo: 0.24.0
+      oslo: 1.0.1
     dev: false
 
   /arg@5.0.2:
@@ -8332,13 +8644,6 @@ packages:
       wcwidth: 1.0.1
     dev: false
 
-  /oslo@0.24.0:
-    resolution: {integrity: sha512-ALOypmwQXyu7AluDqF/EySx7AjWk85gHKY+3yb2LaZ5vArc2jxxZF6tNwGKQ3Rb968ednCFf3opAOoaetRN9+g==}
-    dependencies:
-      '@node-rs/argon2': 1.6.1
-      '@node-rs/bcrypt': 1.8.1
-    dev: false
-
   /oslo@0.25.1:
     resolution: {integrity: sha512-XEmUNC9qeMx8UVtHsP6I2xXYSmzVsv/sZw5VsKMTJvXHd3boHAY016ZJtviXiBbE18ah/mU9Dyv4MizwOGShxw==}
     dependencies:
@@ -8351,6 +8656,13 @@ packages:
     dependencies:
       '@node-rs/argon2': 1.6.1
       '@node-rs/bcrypt': 1.8.1
+    dev: false
+
+  /oslo@1.0.1:
+    resolution: {integrity: sha512-esfzZry+HfGgK/GCYkg7BRlLd3RH5aHa08wgLJPYjENXybi0BvXxGk0LbUj+lXfz2TkjPDHe4rB/o6JxRLHxBg==}
+    dependencies:
+      '@node-rs/argon2': 1.7.2
+      '@node-rs/bcrypt': 1.9.2
     dev: false
 
   /p-limit@2.3.0:
